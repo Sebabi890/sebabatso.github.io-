@@ -1,0 +1,210 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;  /* Dark slate gray background for the web */
+}
+
+header {
+    background: gray;  /* Gray for header */
+    color: white;
+    padding: 15px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+.header-content {
+    flex-grow: 1; /* Allow header content to grow */
+    text-align: center; /* Center text within the header content */
+}
+
+header h1 {
+    font-size: 2.5em; /* Increase font size */
+    margin: 0; /* Remove default margin */
+}
+
+.slogan {
+    font-size: 1.2em;
+    animation: breathe 3s infinite ease-in-out; /* Breathing animation */
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: gold;  /* Gold on hover */
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of text */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%; /* Ensure it fills the entire space */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+}
+
+.banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner .banner-text h2 {
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    color: white;  /* White text color for readability */
+}
+
+.service-item img {
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.service-item img:hover {
+    transform: scale(1.1);
+}
+
+.services-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: lightyellow;  /* Light yellow background for the services table */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-table th, .services-table td {
+    padding: 15px;
+    border: 2px solid darkgray;  /* Dark gray border for the table */
+    color: black;  /* Black text color for readability in tables */
+}
+
+.services-table th {
+    background-color: silver;  /* Silver background for table header */
+    font-size: 18px;
+}
+
+.services-table tr:nth-child(even) {
+    background-color: beige;  /* Beige for alternate rows */
+}
+
+.services-table img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.services-table img:hover {
+    transform: scale(1.1);
+}
+
+.contact-table {
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background: lightyellow;  /* Light yellow background for the contact table */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-table th, .contact-table td {
+    padding: 15px;
+    border: 2px solid darkgray;  /* Dark gray border for the contact table */
+    color: black;  /* Black text color for readability in contact table */
+}
+
+.contact-table th {
+    background-color: silver;  /* Silver background for the contact table header */
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contact-table tr:nth-child(even) {
+    background-color: beige;  /* Beige for alternate rows */
+}
+
+.contact-table a {
+    color: gray;  /* Gray color for the links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-table a:hover {
+    text-decoration: underline;
+    color: darkgray;  /* Dark gray hover effect for the links */
+}
+
+footer {
+    background: darkgray;  /* Dark gray for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for About Page */
+.about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+.about-content h2 {
+    text-align: center; /* Center the heading here */
+    color: #007bff;
+    margin-bottom: 30px;
+}
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.about-content strong {
+    color: #007bff;
+}
+.about-content .timeline {
+    margin-top: 40px;
+}
+.about-content .timeline h3
