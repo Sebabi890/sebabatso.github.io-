@@ -1,12 +1,12 @@
-body { 
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: darkslategray;  /* Dark slate gray background for the web */
+    background-color: darkslategray; /* Dark slate gray background for the web */
 }
 
 header {
-    background: gray;  /* Gray for header */
+    background: gray; /* Gray for header */
     color: white;
     padding: 15px;
     display: flex; /* Use flexbox for layout */
@@ -53,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: gold;  /* Gold on hover */
+    color: gold; /* Gold on hover */
     text-decoration: underline;
 }
 
@@ -89,7 +89,7 @@ nav ul li a:hover {
 .content {
     padding: 20px;
     text-align: center;
-    color: white;  /* White text color for readability */
+    color: white; /* White text color for readability */
 }
 
 .service-item img {
@@ -106,23 +106,23 @@ nav ul li a:hover {
     margin: 20px auto;
     border-collapse: collapse;
     text-align: center;
-    background: lightyellow;  /* Light yellow background for the services table */
+    background: lightyellow; /* Light yellow background for the services table */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .services-table th, .services-table td {
     padding: 15px;
-    border: 2px solid darkgray;  /* Dark gray border for the table */
-    color: black;  /* Black text color for readability in tables */
+    border: 2px solid darkgray; /* Dark gray border for the table */
+    color: black; /* Black text color for readability in tables */
 }
 
 .services-table th {
-    background-color: silver;  /* Silver background for table header */
+    background-color: silver; /* Silver background for table header */
     font-size: 18px;
 }
 
 .services-table tr:nth-child(even) {
-    background-color: beige;  /* Beige for alternate rows */
+    background-color: beige; /* Beige for alternate rows */
 }
 
 .services-table img {
@@ -139,7 +139,7 @@ nav ul li a:hover {
     margin: 30px auto;
     border-collapse: collapse;
     text-align: center;
-    background: lightyellow;  /* Light yellow background for the contact table */
+    background: lightyellow; /* Light yellow background for the contact table */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
@@ -147,33 +147,33 @@ nav ul li a:hover {
 
 .contact-table th, .contact-table td {
     padding: 15px;
-    border: 2px solid darkgray;  /* Dark gray border for the contact table */
-    color: black;  /* Black text color for readability in contact table */
+    border: 2px solid darkgray; /* Dark gray border for the contact table */
+    color: black; /* Black text color for readability in contact table */
 }
 
 .contact-table th {
-    background-color: silver;  /* Silver background for the contact table header */
+    background-color: silver; /* Silver background for the contact table header */
     font-size: 18px;
     text-transform: uppercase;
 }
 
 .contact-table tr:nth-child(even) {
-    background-color: beige;  /* Beige for alternate rows */
+    background-color: beige; /* Beige for alternate rows */
 }
 
 .contact-table a {
-    color: gray;  /* Gray color for the links */
+    color: gray; /* Gray color for the links */
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-table a:hover {
     text-decoration: underline;
-    color: darkgray;  /* Dark gray hover effect for the links */
+    color: darkgray; /* Dark gray hover effect for the links */
 }
 
 footer {
-    background: darkgray;  /* Dark gray for footer */
+    background: darkgray; /* Dark gray for footer */
     color: white;
     text-align: center;
     padding: 10px;
@@ -182,8 +182,8 @@ footer {
     width: 100%;
 }
 
-/* Styles for About Page */
-.about-content {
+/* Styles for Stakeholder Page */
+.stakeholder-content {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
@@ -192,19 +192,34 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     color: #333;
 }
-.about-content h2 {
-    text-align: center; /* Center the heading here */
+.stakeholder-content h2 {
+    text-align: center;
     color: #007bff;
     margin-bottom: 30px;
 }
-.about-content p {
+.stakeholder-content p {
     line-height: 1.6;
     margin-bottom: 20px;
 }
-.about-content strong {
+.stakeholder-content strong {
     color: #007bff;
 }
-.about-content .timeline {
+.stakeholder-content .stakeholder-list {
     margin-top: 40px;
 }
-.about-content .timeline h3
+.stakeholder-content .stakeholder-list h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.stakeholder-content .stakeholder-list ul {
+    list-style: none;
+    padding: 0;
+}
+.stakeholder-content .stakeholder-list li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.stakeholder-content .stakeholder-list li span {
+    font-weight: bold;
+}
